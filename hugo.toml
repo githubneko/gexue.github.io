@@ -1,0 +1,44 @@
+baseURL = "https://gexue.dev/"
+languageCode = "zh-cn"
+title = "割雪 | Gexue"
+theme = "hugo-PaperMod"
+
+[pagination]
+pagerSize = 8
+
+enableRobotsTXT = true
+enableEmoji = true
+
+[params]
+
+defaultTheme = "dark"
+disableThemeToggle = true
+
+ShowReadingTime = true
+ShowShareButtons = false
+ShowPostNavLinks = true
+ShowBreadCrumbs = false
+ShowCodeCopyButtons = true
+ShowRssButtonInSectionTermList = false
+
+ShowWordCount = false
+
+displayFullLangName = true
+
+ShowToc = true
+
+[params.homeInfoParams]
+Title = "割雪"
+Content = "独立游戏开发者。\n\n目前正在学习绘画、Godot 与游戏设计。\n\n这里记录开发日志、制作过程，以及一些关于游戏创作的思考。"
+
+[[menu.main]]
+identifier = "devlog"
+name = "开发日志"
+url = "/devlog/"
+weight = 10
+
+[[menu.main]]
+identifier = "bilibili"
+name = "bilibili"
+url = "https://space.bilibili.com/18497689"
+weight = 20
