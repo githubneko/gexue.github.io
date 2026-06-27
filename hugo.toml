@@ -34,7 +34,7 @@ date = ["date", "publishDate", "lastmod"]
 [[menu.main]]
 identifier = "devlog"
 name = "开发日志"
-url = "/devlog/"
+url = "content/devlog/"
 weight = 10
 
 [[menu.main]]
