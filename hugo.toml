@@ -3,8 +3,7 @@ languageCode = "zh-cn"
 title = "割雪 | Gexue"
 theme = "PaperMod"
 
-[pagination]
-pagerSize = 10
+paginate = 20
 
 enableRobotsTXT = true
 enableEmoji = true
@@ -13,25 +12,24 @@ enableEmoji = true
 mainSections = ["devlog"]
 defaultTheme = "dark"
 disableThemeToggle = true
-ShowReadingTime = true
-ShowShareButtons = false
-ShowPostNavLinks = true
-ShowBreadCrumbs = false
-ShowCodeCopyButtons = true
-ShowRssButtonInSectionTermList = false
 
-ShowWordCount = false
+showReadingTime = true
+showShareButtons = false
+showPostNavLinks = true
+showBreadCrumbs = false
+showCodeCopyButtons = true
+showRssButtonInSectionTermList = false
+showWordCount = false
 
 displayFullLangName = true
-
 ShowToc = true
-
-[frontmatter]
-  date = ["date", "publishDate", "lastmod"]
 
 [params.homeInfoParams]
 Title = "割雪"
-Content = "独立游戏开发者。\n\n目前正在学习绘画、Godot 与游戏设计。\n\n这里记录开发日志、制作过程，以及一些关于游戏创作的思考。"
+Content = "独立游戏开发者。\n\n目前正在学习绘画、Godot 与游戏设计。\n\n记录开发日志与创作过程。"
+
+[frontmatter]
+date = ["date", "publishDate", "lastmod"]
 
 [[menu.main]]
 identifier = "devlog"
