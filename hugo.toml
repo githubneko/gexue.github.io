@@ -1,7 +1,7 @@
 baseURL = "https://gexue.dev/"
 languageCode = "zh-cn"
 title = "割雪 | Gexue"
-theme = "hugo-PaperMod"
+theme = "PaperMod"
 
 [pagination]
 pagerSize = 8
