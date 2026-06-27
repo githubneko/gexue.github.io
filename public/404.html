@@ -76,7 +76,60 @@
         <polyline points="17 11 12 6 7 11"></polyline>
         <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
-</a>
+</a><div class="devlog-tools">
+
+  <button id="searchToggle">🔍</button>
+
+  <button onclick="filterTag('game1')">游戏1</button>
+  <button onclick="filterTag('game2')">游戏2</button>
+
+</div>
+
+<input id="searchBox" style="display:none;" placeholder="搜索...">
+<div style="color:red">DEVLOG TOOL LOADED</div>
+<script>
+  const searchToggle = document.getElementById("searchToggle");
+  const searchBox = document.getElementById("searchBox");
+
+  searchToggle.addEventListener("click", () => {
+    if (searchBox.style.display === "none") {
+      searchBox.style.display = "block";
+      searchBox.focus();
+    } else {
+      searchBox.style.display = "none";
+      searchBox.value = "";
+      filterReset();
+    }
+  });
+
+  
+  function filterTag(tag) {
+    const posts = document.querySelectorAll(".post-entry");
+
+    posts.forEach(p => {
+      const tags = p.dataset.tags || "";
+      p.style.display = tags.includes(tag) ? "block" : "none";
+    });
+  }
+
+  
+  function filterReset() {
+    document.querySelectorAll(".post-entry").forEach(p => {
+      p.style.display = "block";
+    });
+  }
+
+  
+  searchBox.addEventListener("input", function () {
+    const q = this.value.toLowerCase();
+    const posts = document.querySelectorAll(".post-entry");
+
+    posts.forEach(p => {
+      const text = p.innerText.toLowerCase();
+      p.style.display = text.includes(q) ? "block" : "none";
+    });
+  });
+</script>
 
 <script>
     let menu = document.getElementById('menu');
