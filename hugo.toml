@@ -4,13 +4,13 @@ title = "割雪 | Gexue"
 theme = "PaperMod"
 
 [pagination]
-pagerSize = 8
+pagerSize = 100
 
 enableRobotsTXT = true
 enableEmoji = true
 
 [params]
-
+mainSections = ["devlog"]
 defaultTheme = "dark"
 disableThemeToggle = true
 ShowReadingTime = true
