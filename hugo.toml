@@ -9,6 +9,7 @@ enableRobotsTXT = true
 enableEmoji = true
 
 [params]
+mainSections = ["devlog"]
 defaultTheme = "dark"
 disableThemeToggle = true
 
@@ -27,6 +28,8 @@ ShowToc = true
 Title = "割雪"
 Content = "独立游戏开发者。\n\n目前正在学习绘画、Godot 与游戏设计。\n\n记录开发日志与创作过程。"
 
+[frontmatter]
+date = ["date", "publishDate", "lastmod"]
 
 [[menu.main]]
 identifier = "devlog"
