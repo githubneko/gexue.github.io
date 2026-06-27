@@ -4,7 +4,7 @@ title = "割雪 | Gexue"
 theme = "PaperMod"
 
 [pagination]
-pagerSize = 10
+pagerSize = 100
 
 enableRobotsTXT = true
 enableEmoji = true
