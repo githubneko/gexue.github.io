@@ -12,7 +12,6 @@ enableEmoji = true
 mainSections = ["devlog"]
 defaultTheme = "dark"
 disableThemeToggle = true
-title = "割雪 | Gexue - 独立游戏开发者"
 description = "这里是割雪的个人网站，一个独立游戏开发者的创作空间。分享游戏设计、开发日志与个人思考。"
 author = "割雪"
 showReadingTime = true
