@@ -12,7 +12,9 @@ enableEmoji = true
 mainSections = ["devlog"]
 defaultTheme = "dark"
 disableThemeToggle = true
-
+title = "割雪 | Gexue - 独立游戏开发者"
+description = "这里是割雪的个人网站，一个独立游戏开发者的创作空间。分享游戏设计、开发日志与个人思考。"
+author = "割雪"
 showReadingTime = true
 showShareButtons = false
 showPostNavLinks = true
@@ -26,7 +28,7 @@ ShowToc = true
 
 [params.homeInfoParams]
 Title = "割雪"
-Content = "独立游戏开发者。\n\n目前正在学习绘画、Godot 与游戏设计。\n\n记录开发日志与创作过程。"
+Content = "独立游戏开发者。\n\n目前正在学习绘画、Godot 与游戏设计。\n\n记录开发日志与创作过程。\n\n\n\n联系我们：\n\n邮箱：mail@gexue.dev"
 
 [frontmatter]
 date = ["date", "publishDate", "lastmod"]

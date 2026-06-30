@@ -7,8 +7,8 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Categories | 割雪 | Gexue</title>
 <meta name="keywords" content="">
-<meta name="description" content="">
-<meta name="author" content="">
+<meta name="description" content="这里是割雪的个人网站，一个独立游戏开发者的创作空间。分享游戏设计、开发日志与个人思考。">
+<meta name="author" content="割雪">
 <link rel="canonical" href="http://localhost:1313/categories/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.89ca4972ab5e6aaa05e9a0dae0c4bb64b26585bc79e36f5cf33614eea0283abe.css" integrity="sha256-icpJcqteaqoF6aDa4MS7ZLJlhbx5429c8zYU7qAoOr4=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
@@ -82,60 +82,7 @@
         <polyline points="17 11 12 6 7 11"></polyline>
         <polyline points="17 18 12 13 7 18"></polyline>
     </svg>
-</a><div class="devlog-tools">
-
-  <button id="searchToggle">🔍</button>
-
-  <button onclick="filterTag('game1')">游戏1</button>
-  <button onclick="filterTag('game2')">游戏2</button>
-
-</div>
-
-<input id="searchBox" style="display:none;" placeholder="搜索...">
-<div style="color:red">DEVLOG TOOL LOADED</div>
-<script>
-  const searchToggle = document.getElementById("searchToggle");
-  const searchBox = document.getElementById("searchBox");
-
-  searchToggle.addEventListener("click", () => {
-    if (searchBox.style.display === "none") {
-      searchBox.style.display = "block";
-      searchBox.focus();
-    } else {
-      searchBox.style.display = "none";
-      searchBox.value = "";
-      filterReset();
-    }
-  });
-
-  
-  function filterTag(tag) {
-    const posts = document.querySelectorAll(".post-entry");
-
-    posts.forEach(p => {
-      const tags = p.dataset.tags || "";
-      p.style.display = tags.includes(tag) ? "block" : "none";
-    });
-  }
-
-  
-  function filterReset() {
-    document.querySelectorAll(".post-entry").forEach(p => {
-      p.style.display = "block";
-    });
-  }
-
-  
-  searchBox.addEventListener("input", function () {
-    const q = this.value.toLowerCase();
-    const posts = document.querySelectorAll(".post-entry");
-
-    posts.forEach(p => {
-      const text = p.innerText.toLowerCase();
-      p.style.display = text.includes(q) ? "block" : "none";
-    });
-  });
-</script>
+</a>
 
 <script>
     let menu = document.getElementById('menu');
